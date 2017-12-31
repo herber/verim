@@ -1,0 +1,40 @@
+{
+  "name": "verim",
+  "version": "1.0.0",
+  "description": "A minimal assertion library",
+  "license": "MIT",
+  "repository": "herber/verim",
+  "author": {
+    "name": "Tobias Herber",
+    "email": "tobihrbr@gmail.com",
+    "url": "tobihrbr.com"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "formatted && nyc ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "hook-std": "^0.4.0"
+  },
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "codecov": "^2.2.0",
+    "formatted": "^1.0.0",
+    "nyc": "^11.0.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "formatted": {}
+}
